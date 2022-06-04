@@ -1,20 +1,20 @@
 body {
 background-color: darkolivegreen;
 background-image: url(./boxes.png);
-background-repeat: no-repeat repeat;
-background-size: 50%;
+background-position: left;
+background-size: contain;
+background-repeat: no-repeat;
 }
 
 .container {
-    width: 75vw;
+    width: 50vw;
     margin: 0 auto;
 }
 
 .table {
-    width: 15vw;
+
     height: 60vh;
-    margin-top: 10%;
-    margin-left: 50%;
+    margin-left: auto;
 
     font-size: 30px;
 
