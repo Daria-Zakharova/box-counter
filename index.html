@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Box counter</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <script src="./items.js"></script> -->
+    <script src="./boxes.js"></script>
+    <table class="table">
+        <thead>
+            <th>Box №</th><th>Box content</th>
+        </thead>
+        <tbody>
+        <script>
+            for(let i=1; i<= boxes.length; i+=1) {
+                document.write('<tr><td>'+ i + '</td><td>' + boxes[i-1] + '</td></tr>');
+            }
+        </script>
+        </tbody>
+        <script>
+        if(box.length!==0) {
+            document.write('<tfoot><tr><td colspan = "2">' + countExtraItems(box) + '</td></td></tr></tfoot>');
+        }
+        </script>
+    </table>
+    </div>
+</body>
+</html>

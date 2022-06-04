@@ -1,0 +1,30 @@
+body {
+background-color: darkolivegreen;
+background-image: url(./boxes.png);
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.table {
+    width: 15vw;
+    height: 60vh;
+    margin: 10% auto;
+
+    font-size: 30px;
+
+
+    border: 4px solid white;
+    background-color: rgba(183, 145, 108, 0.8);
+}
+
+th, td {
+    border: 3px dotted white;
+
+    text-align: center;
+    vertical-align: top;
+}
