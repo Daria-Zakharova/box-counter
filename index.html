@@ -9,25 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <!-- <script src="./items.js"></script> -->
+    <div class="img-div">
+        <img src="./boxes.png" alt="Boxes">
+    </div>
     <script src="./boxes.js"></script>
+<div class="table-div">
     <table class="table">
-        <thead>
-            <th>Box №</th><th>Box content</th>
-        </thead>
-        <tbody>
+    <thead>
+        <th>Box №</th>
+        <th>Box content</th>
+    </thead>
+    <tbody>
         <script>
-            for(let i=1; i<= boxes.length; i+=1) {
-                document.write('<tr><td>'+ i + '</td><td>' + boxes[i-1] + '</td></tr>');
+            for (let i = 1; i <= boxes.length; i += 1) {
+                document.write('<tr><td>' + i + '</td><td>' + boxes[i - 1] + '</td></tr>');
             }
         </script>
-        </tbody>
-        <script>
-        if(box.length!==0) {
+    </tbody>
+    <script>
+        if (box.length !== 0) {
             document.write('<tfoot><tr><td colspan = "2">' + countExtraItems(box) + '</td></td></tr></tfoot>');
         }
-        </script>
-    </table>
+    </script>
+</table>
+</div>
     </div>
 </body>
 </html>
