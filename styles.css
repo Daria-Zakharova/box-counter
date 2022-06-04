@@ -1,8 +1,8 @@
 body {
 background-color: darkolivegreen;
 background-image: url(./boxes.png);
-background-position: left;
-background-repeat: no-repeat;
+background-repeat: no-repeat repeat;
+background-size: 50%;
 }
 
 .container {
@@ -13,7 +13,8 @@ background-repeat: no-repeat;
 .table {
     width: 15vw;
     height: 60vh;
-    margin: 10% auto;
+    margin-top: 10%;
+    margin-left: 50%;
 
     font-size: 30px;
 
