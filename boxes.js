@@ -36,7 +36,7 @@ for(i = 0; i < itemList.length; i += 1) {
  */
 //const items = ['140 ww', '120 wicked witch', '100 magician', '281 mermaid tail', '20 cat butt', '40 alice', '140 halfling'];
 let items;
-items = prompt('Please enter the list of items, separated with comas, e.g. "140 wicked witch, 5 magician, 146 dire wolf"');
+items = prompt('Please enter the list of items, separated with commas, e.g. "140 wicked witch, 5 magician, 146 dire wolf"');
 items = items.split(', ');
 
 let boxes = []; // final result
