@@ -5,16 +5,11 @@ background-color: darkolivegreen;
 .container {
     min-width: 50%;
     max-width: 70%;
-    margin-top: 10%;
-    /* margin: 0 auto; */
+    padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* .img-div {
-    flex-shrink: 1;
-} */
 
 .table-div {
 flex-grow: 1;
