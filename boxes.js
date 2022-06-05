@@ -81,6 +81,7 @@ function getSuitableItemIndex(items) {
 
 function getLeastAmountItem(items) {
     const suitableItems = items.sort((a, b) => Number.parseInt(a) - Number.parseInt(b));
+    items.sort((a, b) => Number.parseInt(b) - Number.parseInt(a));
     const index = items.findIndex((item) => item === suitableItems[0]);
     return index;
 }
