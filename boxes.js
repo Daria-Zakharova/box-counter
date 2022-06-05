@@ -21,7 +21,6 @@ function checkOneItemBoxes(item) {
 function countFullBoxes(item) {
     return boxNumber = Math.floor(Number.parseInt(item) / boxCapacity);
 }
-
 function countRest(item) {
     return rest = Number.parseInt(item) % boxCapacity;
 }
@@ -56,7 +55,14 @@ function countExtraItems(box) {
     return `Think of ${boxCapacity-lastBox} more bookmarks to complete the box`;
 }
 
+function sortByQuantity(items) {
+    return items.sort((a, b) => Number.parseInt(b) - Number.parseInt(a));
+}
+
 function formOneItemBoxes(items) {
+
+    sortByQuantity(items);
+
     for (let i = 0; i < items.length; i += 1) {
 
         if (checkOneItemBoxes(items[i])) {
@@ -84,12 +90,12 @@ function formOneItemBoxes(items) {
     return boxes;
 }
 
+
 function addCombinedBoxes(items) {
     formOneItemBoxes(items);
     for (let i = 0; i < items.length; i += 1) {
 
         if (Number.parseInt(items[i]) < countBoxEmptySpace(box)) {
-
             createBox(items[i]);
             continue;
         }
@@ -116,3 +122,13 @@ function addCombinedBoxes(items) {
     }
     return boxes;
 }
+
+
+
+/* function countBoxes(items) {
+    return createBoxList(items).length;
+} */
+console.log(addCombinedBoxes(items));
+console.log(boxes);
+console.log(box);
+
