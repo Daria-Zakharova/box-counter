@@ -3,12 +3,12 @@ background-color: darkolivegreen;
 }
 
 .container {
-    min-width: 50%;
+    min-width: 800px;
     max-width: 70%;
     padding: 5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
 }
 
 .table-div {
@@ -17,17 +17,21 @@ flex-shrink: 0;
 }
 
 .table {
+    min-width: 400px;
+    max-width: 50%;
     margin: 0 auto;
 
     font-size: 30px;
 
     border: 4px solid white;
+    border-collapse: collapse;
+
     background-color: rgba(183, 145, 108, 0.8);
 }
 
-
 th, td {
     border: 3px dotted white;
+    
 
     text-align: center;
     vertical-align: top;
