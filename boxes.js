@@ -122,9 +122,10 @@ function formOneItemBoxes(items) {
 function addCombinedBoxes(items) {
     
     formOneItemBoxes(items);
-    sortByQuantity(items);
+    //sortByQuantity(items);
 
     for (let i = 0; i < items.length; i += 1) {
+        sortByQuantity(items);
 
         if (Number.parseInt(items[i]) < countBoxEmptySpace(box)) {
 
