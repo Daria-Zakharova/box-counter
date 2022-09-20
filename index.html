@@ -12,7 +12,7 @@
     <div class="img-div">
         <img src="./boxes.png" alt="Boxes" width="400">
     </div>
-    <script src="./boxes.js"></script>
+    
 <div class="table-div">
     <table class="table">
     <thead>
@@ -20,19 +20,24 @@
         <th>Box content</th>
     </thead>
     <tbody>
-        <script>
-            for (let i = 1; i <= boxes.length; i += 1) {
-                document.write('<tr><td>' + i + '</td><td>' + boxes[i - 1] + '</td></tr>');
-            }
-        </script>
+        
     </tbody>
-    <script>
-        if (box.length !== 0) {
-            document.write('<tfoot><tr><td colspan = "2">' + countExtraItems(box) + '</td></td></tr></tfoot>');
-        }
-    </script>
+    
 </table>
 </div>
     </div>
+    <script src="./boxes.js"></script>
+    <script>
+        for (let i = 1; i <= boxes.length; i += 1) {
+            const str = `<tr><td> ${i} </td><td> ${boxes[i - 1]} </td></tr>`;
+            document.querySelector('tbody').insertAdjacentHTML('beforeend', str);
+        }
+    </script>
+    <script>
+        if (box.length !== 0) {
+            const str = `<tfoot><tr><td colspan = "2">${countExtraItems(box)}</td></td></tr></tfoot>`;
+            document.querySelector('tbody').insertAdjacentHTML('beforeend', str);
+        }
+    </script>
 </body>
 </html>
